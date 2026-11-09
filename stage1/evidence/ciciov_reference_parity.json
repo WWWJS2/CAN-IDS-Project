@@ -1,6 +1,0 @@
-{
-  "status": "PASS",
-  "rows_compared": 1408219,
-  "class_counts_and_overlap_match": true,
-  "maximum_correlation_difference": 1.9984014443252818e-15
-}

@@ -1,3 +1,0 @@
-dataset,model,classification,method,n,faithfulness_mean,faithfulness_std,sparsity_fraction_mean,compactness_mean,time_mean,consistency_mean,consistency_std,consistency_pairs,stability_mean,stability_std
-car_hacking,rf,binary,LIME,5,0.025,0.02576604138956717,0.9400000000000001,6.4,0.05088619999587536,0.7808670535882427,0.29839628417759134,2,0.9842030762716583,0.013756108820685665
-car_hacking,rf,binary,SHAP,5,0.15266666666666667,0.17422287769151076,0.7,4.6,0.005310059999465011,0.7526117905994167,0.34985976090550003,2,1.0,0.0

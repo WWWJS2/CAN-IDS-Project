@@ -1,5 +1,0 @@
-source_id,file,rows,BENIGN,DOS,FUZZY,GEAR,RPM
-0,DoS_dataset.csv,3665771,3078250,587521,0,0,0
-1,Fuzzy_dataset.csv,3838860,3347013,0,491847,0,0
-2,gear_dataset.csv,4443142,3845890,0,0,597252,0
-3,RPM_dataset.csv,4621702,3966805,0,0,0,654897
