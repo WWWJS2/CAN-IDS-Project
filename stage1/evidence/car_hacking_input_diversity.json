@@ -1,0 +1,10 @@
+{
+  "unique_predictor_groups_per_class": {
+    "BENIGN": 186614,
+    "DOS": 1,
+    "FUZZY": 491847,
+    "GEAR": 1,
+    "RPM": 1
+  },
+  "scope": "four selected CSV captures"
+}

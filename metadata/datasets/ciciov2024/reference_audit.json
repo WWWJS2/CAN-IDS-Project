@@ -1,0 +1,51 @@
+{
+  "protocol": "seeded_within_capture_reference",
+  "seed": 42,
+  "scope": "within the acquired captures only",
+  "source_order": "seed 42 SplitMix64 of source identifier and original CSV row",
+  "ratios": "approximately 70/15/15 message assignment by fixed hash thresholds",
+  "splits": {
+    "train": {
+      "rows": 985117,
+      "class_counts": {
+        "BENIGN": 855872,
+        "DOS": 52185,
+        "SPOOFING_RPM": 38538,
+        "SPOOFING_SPEED": 17452,
+        "SPOOFING_STEERING_WHEEL": 14087,
+        "SPOOFING_GAS": 6983
+      },
+      "missing_classes": []
+    },
+    "validation": {
+      "rows": 211473,
+      "class_counts": {
+        "BENIGN": 183877,
+        "DOS": 11204,
+        "SPOOFING_RPM": 8153,
+        "SPOOFING_SPEED": 3772,
+        "SPOOFING_STEERING_WHEEL": 2958,
+        "SPOOFING_GAS": 1509
+      },
+      "missing_classes": []
+    },
+    "test": {
+      "rows": 211629,
+      "class_counts": {
+        "BENIGN": 183988,
+        "DOS": 11274,
+        "SPOOFING_RPM": 8209,
+        "SPOOFING_SPEED": 3727,
+        "SPOOFING_STEERING_WHEEL": 2932,
+        "SPOOFING_GAS": 1499
+      },
+      "missing_classes": []
+    }
+  },
+  "groups_shared_across_primary_subsets": 673,
+  "limitations": [
+    "Naturally recurring CAN inputs appear in different subsets.",
+    "Within-capture autocorrelation remains possible.",
+    "No unseen-pattern, independent-session or cross-vehicle generalization claim."
+  ]
+}

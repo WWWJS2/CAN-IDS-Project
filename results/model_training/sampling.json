@@ -1,0 +1,35 @@
+{
+  "ciciov2024": {
+    "full_reference_training_rows": 985117,
+    "actual_training_rows": 985117,
+    "sampled": false,
+    "multiclass_counts": {
+      "0": 855872,
+      "1": 52185,
+      "2": 6983,
+      "3": 38538,
+      "4": 17452,
+      "5": 14087
+    },
+    "binary_counts": {
+      "0": 855872,
+      "1": 129245
+    }
+  },
+  "car_hacking": {
+    "full_reference_training_rows": 11595074,
+    "actual_training_rows": 750000,
+    "sampled": true,
+    "multiclass_counts": {
+      "0": 644521,
+      "1": 26559,
+      "2": 22276,
+      "3": 27022,
+      "4": 29622
+    },
+    "binary_counts": {
+      "0": 644521,
+      "1": 105479
+    }
+  }
+}

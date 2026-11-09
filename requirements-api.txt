@@ -1,0 +1,4 @@
+-r requirements.txt
+fastapi==0.128.2
+uvicorn[standard]==0.48.0
+python-multipart==0.0.22

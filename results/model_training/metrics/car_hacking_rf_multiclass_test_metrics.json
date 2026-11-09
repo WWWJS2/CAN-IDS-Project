@@ -1,0 +1,19 @@
+{
+  "accuracy": 0.9999975858161873,
+  "macro_precision": 0.9999837007456909,
+  "macro_recall": 0.9999994378601208,
+  "macro_f1": 0.9999915689704153,
+  "weighted_precision": 0.9999975860129342,
+  "weighted_recall": 0.9999975858161873,
+  "weighted_f1": 0.9999975858636797,
+  "roc_auc": 0.9999999036939947,
+  "roc_auc_note": "Macro one-vs-rest ROC-AUC.",
+  "split": "test",
+  "records": 2485312,
+  "inference_time_seconds": 10.779082099994412,
+  "selected_model_training_time_seconds": 21.5192064999992,
+  "total_candidate_search_time_seconds": 42.85939349999899,
+  "actual_training_rows": 750000,
+  "full_reference_training_rows": 11595074,
+  "training_sampled": true
+}

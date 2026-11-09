@@ -1,0 +1,22 @@
+{
+  "dataset": "car_hacking",
+  "files": [
+    {
+      "path": "../data/raw/car_hacking/DoS_dataset.csv",
+      "attack_type": "DOS"
+    },
+    {
+      "path": "../data/raw/car_hacking/Fuzzy_dataset.csv",
+      "attack_type": "FUZZY"
+    },
+    {
+      "path": "../data/raw/car_hacking/gear_dataset.csv",
+      "attack_type": "GEAR"
+    },
+    {
+      "path": "../data/raw/car_hacking/RPM_dataset.csv",
+      "attack_type": "RPM"
+    }
+  ],
+  "rare_group_policy": "train_test"
+}

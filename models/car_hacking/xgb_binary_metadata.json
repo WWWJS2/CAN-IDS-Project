@@ -1,0 +1,91 @@
+{
+  "dataset": "car_hacking",
+  "model": "xgb",
+  "classification_type": "binary",
+  "protocol": "seeded_within_capture_reference",
+  "random_state": 42,
+  "features": [
+    "ID",
+    "DATA_0",
+    "DATA_1",
+    "DATA_2",
+    "DATA_3",
+    "DATA_4",
+    "DATA_5",
+    "DATA_6",
+    "DATA_7",
+    "DLC"
+  ],
+  "class_labels": [
+    0,
+    1
+  ],
+  "class_names": [
+    "BENIGN",
+    "ATTACK"
+  ],
+  "class_mapping": {
+    "binary": {
+      "BENIGN": 0,
+      "ATTACK": 1
+    },
+    "multiclass": {
+      "BENIGN": 0,
+      "DOS": 1,
+      "FUZZY": 2,
+      "GEAR": 3,
+      "RPM": 4
+    }
+  },
+  "selected_candidate": 1,
+  "selected_parameters": {
+    "n_estimators": 250,
+    "max_depth": 8,
+    "learning_rate": 0.08,
+    "subsample": 0.9,
+    "colsample_bytree": 0.9,
+    "min_child_weight": 2,
+    "reg_lambda": 1.0
+  },
+  "validation_selection_macro_f1": 0.9999734146355885,
+  "trials": [
+    {
+      "candidate": 1,
+      "parameters": {
+        "n_estimators": 250,
+        "max_depth": 8,
+        "learning_rate": 0.08,
+        "subsample": 0.9,
+        "colsample_bytree": 0.9,
+        "min_child_weight": 2,
+        "reg_lambda": 1.0
+      },
+      "training_time_seconds": 4.047824799999944,
+      "validation_macro_f1": 0.9999734146355885
+    },
+    {
+      "candidate": 2,
+      "parameters": {
+        "n_estimators": 400,
+        "max_depth": 10,
+        "learning_rate": 0.05,
+        "subsample": 0.9,
+        "colsample_bytree": 0.9,
+        "min_child_weight": 2,
+        "reg_lambda": 1.0
+      },
+      "training_time_seconds": 5.89745369999946,
+      "validation_macro_f1": 0.9999709222923954
+    }
+  ],
+  "full_reference_training_rows": 11595074,
+  "actual_training_rows": 750000,
+  "training_sampled": true,
+  "training_class_counts": {
+    "0": 644521,
+    "1": 105479
+  },
+  "total_candidate_training_time_seconds": 9.945278499999404,
+  "selected_model_training_time_seconds": 4.047824799999944,
+  "model_file": "models\\car_hacking\\xgb_binary.json"
+}

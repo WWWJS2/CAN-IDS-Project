@@ -1,0 +1,19 @@
+{
+  "ciciov2024": {
+    "protocol": "seeded_within_capture_reference",
+    "random_state": 42,
+    "assignment_is_mutually_exclusive": true,
+    "train_test_overlap": 0,
+    "train_validation_overlap": 0,
+    "basis": "Every source identifier and original source row maps to exactly one fixed hash interval: Train below 7000, Validation from 7000 through 8499, or Test from 8500 through 9999."
+  },
+  "car_hacking": {
+    "protocol": "seeded_within_capture_reference",
+    "random_state": 42,
+    "assignment_is_mutually_exclusive": true,
+    "train_test_overlap": 0,
+    "train_validation_overlap": 0,
+    "training_sample_source": "reference Train only",
+    "basis": "The deterministic stratified sample is selected only after the fixed assignment equals Train; Validation and Test rows are never candidates."
+  }
+}

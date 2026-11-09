@@ -1,0 +1,45 @@
+{
+  "BENIGN": {
+    "precision": 1.0,
+    "recall": 0.9999985974151296,
+    "f1-score": 0.9999992987070729,
+    "support": 2138908.0
+  },
+  "DOS": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 88719.0
+  },
+  "FUZZY": {
+    "precision": 0.9999593732648998,
+    "recall": 1.0,
+    "f1-score": 0.9999796862198086,
+    "support": 73840.0
+  },
+  "GEAR": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 89767.0
+  },
+  "RPM": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 97855.0
+  },
+  "accuracy": 0.9999987947397622,
+  "macro avg": {
+    "precision": 0.9999918746529801,
+    "recall": 0.9999997194830259,
+    "f1-score": 0.9999957969853763,
+    "support": 2489089.0
+  },
+  "weighted avg": {
+    "precision": 0.9999987947887281,
+    "recall": 0.9999987947397622,
+    "f1-score": 0.9999987947515813,
+    "support": 2489089.0
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "dataset": "ciciov2024",
+  "model": "rf",
+  "classification_type": "multiclass",
+  "protocol": "seeded_within_capture_reference",
+  "random_state": 42,
+  "features": [
+    "ID",
+    "DATA_0",
+    "DATA_1",
+    "DATA_2",
+    "DATA_3",
+    "DATA_4",
+    "DATA_5",
+    "DATA_6",
+    "DATA_7"
+  ],
+  "class_labels": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "class_names": [
+    "BENIGN",
+    "DOS",
+    "SPOOFING_GAS",
+    "SPOOFING_RPM",
+    "SPOOFING_SPEED",
+    "SPOOFING_STEERING_WHEEL"
+  ],
+  "class_mapping": {
+    "binary": {
+      "BENIGN": 0,
+      "ATTACK": 1
+    },
+    "multiclass": {
+      "BENIGN": 0,
+      "DOS": 1,
+      "SPOOFING_GAS": 2,
+      "SPOOFING_RPM": 3,
+      "SPOOFING_SPEED": 4,
+      "SPOOFING_STEERING_WHEEL": 5
+    }
+  },
+  "selected_candidate": 1,
+  "selected_parameters": {
+    "n_estimators": 200,
+    "max_depth": 16,
+    "min_samples_leaf": 2,
+    "class_weight": "balanced_subsample"
+  },
+  "validation_selection_macro_f1": 1.0,
+  "trials": [
+    {
+      "candidate": 1,
+      "parameters": {
+        "n_estimators": 200,
+        "max_depth": 16,
+        "min_samples_leaf": 2,
+        "class_weight": "balanced_subsample"
+      },
+      "training_time_seconds": 34.003464299981715,
+      "validation_macro_f1": 1.0
+    },
+    {
+      "candidate": 2,
+      "parameters": {
+        "n_estimators": 200,
+        "max_depth": 24,
+        "min_samples_leaf": 1,
+        "class_weight": "balanced_subsample"
+      },
+      "training_time_seconds": 33.569481399987126,
+      "validation_macro_f1": 1.0
+    }
+  ],
+  "full_reference_training_rows": 985117,
+  "actual_training_rows": 985117,
+  "training_sampled": false,
+  "training_class_counts": {
+    "0": 855872,
+    "1": 52185,
+    "2": 6983,
+    "3": 38538,
+    "4": 17452,
+    "5": 14087
+  },
+  "total_candidate_training_time_seconds": 67.57294569996884,
+  "model_file": "models\\ciciov2024\\rf_multiclass.joblib"
+}

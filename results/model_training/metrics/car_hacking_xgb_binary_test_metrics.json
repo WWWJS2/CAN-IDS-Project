@@ -1,0 +1,22 @@
+{
+  "accuracy": 0.9999879290809364,
+  "macro_precision": 0.9999798625285697,
+  "macro_recall": 0.9999703280467911,
+  "macro_f1": 0.9999750952208478,
+  "weighted_precision": 0.9999879290085949,
+  "weighted_recall": 0.9999879290809364,
+  "weighted_f1": 0.9999879290233884,
+  "true_negatives": 2134689,
+  "false_positives": 11,
+  "false_negatives": 19,
+  "true_positives": 350593,
+  "roc_auc": 0.9999999888837143,
+  "split": "test",
+  "records": 2485312,
+  "inference_time_seconds": 2.6371887999994215,
+  "selected_model_training_time_seconds": 4.047824799999944,
+  "total_candidate_search_time_seconds": 9.945278499999404,
+  "actual_training_rows": 750000,
+  "full_reference_training_rows": 11595074,
+  "training_sampled": true
+}

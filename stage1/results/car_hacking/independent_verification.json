@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "dataset": "car_hacking",
+  "rows_verified": 16569475,
+  "unique_groups_verified": 678464,
+  "cross_partition_group_overlap": 0,
+  "all_source_messages_present_exactly_once": true,
+  "splits": {
+    "train": {
+      "rows": 13110193,
+      "class_counts": {
+        "BENIGN": 10926230,
+        "DOS": 587521,
+        "FUZZY": 344293,
+        "GEAR": 597252,
+        "RPM": 654897
+      }
+    },
+    "validation": {
+      "rows": 1610888,
+      "class_counts": {
+        "BENIGN": 1537111,
+        "FUZZY": 73777
+      }
+    },
+    "test": {
+      "rows": 1848394,
+      "class_counts": {
+        "BENIGN": 1774617,
+        "FUZZY": 73777
+      }
+    }
+  },
+  "missing_classes_by_split": {
+    "train": [],
+    "validation": [
+      "DOS",
+      "GEAR",
+      "RPM"
+    ],
+    "test": [
+      "DOS",
+      "GEAR",
+      "RPM"
+    ]
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "dataset": "ciciov2024",
+  "run_scope": "all_supplied_files",
+  "rows_valid": 1408219,
+  "rows_rejected": 0,
+  "benchmark_completion_claimed": false,
+  "sources": [
+    {
+      "source_id": 0,
+      "file": "decimal_DoS.csv",
+      "bytes": 2827315,
+      "sha256": "84b45003b8ab75273e0a1dcb05de6a351a2ded4be1bd1127017a4b4624b4f1c8",
+      "valid_rows": 74663,
+      "rejected_rows": 0,
+      "class_counts": {
+        "DOS": 74663
+      }
+    },
+    {
+      "source_id": 1,
+      "file": "decimal_benign.csv",
+      "bytes": 57659154,
+      "sha256": "b6d77f20dfb0a1a08717f02b3773568a6035332bc430c9a92f18407dc2893755",
+      "valid_rows": 1223737,
+      "rejected_rows": 0,
+      "class_counts": {
+        "BENIGN": 1223737
+      }
+    },
+    {
+      "source_id": 2,
+      "file": "decimal_spoofing-GAS.csv",
+      "bytes": 424710,
+      "sha256": "70631989df540d8699842b025a6a017578d6ef0e04416d5d417948f41d14ed90",
+      "valid_rows": 9991,
+      "rejected_rows": 0,
+      "class_counts": {
+        "SPOOFING_GAS": 9991
+      }
+    },
+    {
+      "source_id": 3,
+      "file": "decimal_spoofing-RPM.csv",
+      "bytes": 2465547,
+      "sha256": "a9898d6c74236a22dcb57bbcf2fe0e4937ba31061c9508d85e75f0485cd41019",
+      "valid_rows": 54900,
+      "rejected_rows": 0,
+      "class_counts": {
+        "SPOOFING_RPM": 54900
+      }
+    },
+    {
+      "source_id": 4,
+      "file": "decimal_spoofing-SPEED.csv",
+      "bytes": 1137857,
+      "sha256": "40812845fd3abae2471c5a87deb84f3cb7cfc014696f4e90b6f48089fc5327bc",
+      "valid_rows": 24951,
+      "rejected_rows": 0,
+      "class_counts": {
+        "SPOOFING_SPEED": 24951
+      }
+    },
+    {
+      "source_id": 5,
+      "file": "decimal_spoofing-STEERING_WHEEL.csv",
+      "bytes": 1158699,
+      "sha256": "9f7db973ee9a0ad2c38e48b9db7ba1c8e0b7aeb269c87e10f4894cee39fbd5e7",
+      "valid_rows": 19977,
+      "rejected_rows": 0,
+      "class_counts": {
+        "SPOOFING_STEERING_WHEEL": 19977
+      }
+    }
+  ],
+  "features": [
+    "ID",
+    "DATA_0",
+    "DATA_1",
+    "DATA_2",
+    "DATA_3",
+    "DATA_4",
+    "DATA_5",
+    "DATA_6",
+    "DATA_7"
+  ],
+  "seed": 42,
+  "unique_input_groups": 3588,
+  "repeated_input_rows": 1404631,
+  "ambiguous_input_groups": 0,
+  "class_counts": {
+    "DOS": 74663,
+    "BENIGN": 1223737,
+    "SPOOFING_GAS": 9991,
+    "SPOOFING_RPM": 54900,
+    "SPOOFING_SPEED": 24951,
+    "SPOOFING_STEERING_WHEEL": 19977
+  },
+  "strategy": "class-set-stratified unique-input groups; 70/15/15 approximate GROUP targets",
+  "rare_group_policy": "train_test",
+  "missing_classes_by_split": {
+    "train": [],
+    "validation": [
+      "SPOOFING_GAS"
+    ],
+    "test": []
+  },
+  "splits": {
+    "train": {
+      "rows": 907984,
+      "row_fraction": 0.6447747118878526,
+      "groups": 2509,
+      "class_counts": {
+        "DOS": 57238,
+        "BENIGN": 790847,
+        "SPOOFING_GAS": 4999,
+        "SPOOFING_RPM": 29948,
+        "SPOOFING_SPEED": 14973,
+        "SPOOFING_STEERING_WHEEL": 9979
+      }
+    },
+    "validation": {
+      "rows": 171030,
+      "row_fraction": 0.12145127995006459,
+      "groups": 539,
+      "class_counts": {
+        "DOS": 7469,
+        "BENIGN": 148578,
+        "SPOOFING_RPM": 9986,
+        "SPOOFING_SPEED": 4989,
+        "SPOOFING_STEERING_WHEEL": 8
+      }
+    },
+    "test": {
+      "rows": 329205,
+      "row_fraction": 0.23377400816208274,
+      "groups": 540,
+      "class_counts": {
+        "DOS": 9956,
+        "BENIGN": 284312,
+        "SPOOFING_GAS": 4992,
+        "SPOOFING_RPM": 14966,
+        "SPOOFING_SPEED": 4989,
+        "SPOOFING_STEERING_WHEEL": 9990
+      }
+    }
+  },
+  "limitations": [
+    "Temporal or session independence not established.",
+    "Exact row ratios not guaranteed.",
+    "Source provenance and complete-release coverage require separate review."
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "matplotlib": "3.10.8"
+  }
+}

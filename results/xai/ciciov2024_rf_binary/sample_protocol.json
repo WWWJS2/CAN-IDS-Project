@@ -1,0 +1,107 @@
+{
+  "dataset": "ciciov2024",
+  "model": "rf",
+  "classification": "binary",
+  "features": [
+    "ID",
+    "DATA_0",
+    "DATA_1",
+    "DATA_2",
+    "DATA_3",
+    "DATA_4",
+    "DATA_5",
+    "DATA_6",
+    "DATA_7"
+  ],
+  "class_names": [
+    "BENIGN",
+    "ATTACK"
+  ],
+  "sample_row_ids": [
+    "1:154548",
+    "1:154553",
+    "0:58684",
+    "0:14468"
+  ],
+  "true_classes": [
+    0,
+    0,
+    1,
+    1
+  ],
+  "predicted_classes": [
+    0,
+    0,
+    1,
+    1
+  ],
+  "target_classes": [
+    0,
+    0,
+    1,
+    1
+  ],
+  "background_row_ids": [
+    "1:46281",
+    "1:20532",
+    "1:37004",
+    "1:152335",
+    "1:108150",
+    "1:132462",
+    "1:117917",
+    "1:50219",
+    "1:120446",
+    "1:167900",
+    "1:138497",
+    "1:184691",
+    "1:182725",
+    "1:22972",
+    "1:207285",
+    "1:184593",
+    "1:188622",
+    "1:81445",
+    "1:166130",
+    "1:130300",
+    "0:25500",
+    "0:42931",
+    "0:15807",
+    "0:59024",
+    "0:8270",
+    "0:33903",
+    "0:64799",
+    "0:8924",
+    "0:42532",
+    "0:5222",
+    "0:60284",
+    "0:65966",
+    "0:69613",
+    "0:15761",
+    "0:48848",
+    "0:22037",
+    "0:25958",
+    "0:13460",
+    "0:54911",
+    "0:3563"
+  ],
+  "protocol": {
+    "random_seed": 42,
+    "samples_per_class": 2,
+    "maximum_error_cases_per_experiment": 1,
+    "background_per_class": 20,
+    "lime_num_samples": 1000,
+    "stability_repetitions": 3,
+    "faithfulness_top_k": 3,
+    "sparsity_relative_threshold": 0.05,
+    "compactness_mass_threshold": 0.8,
+    "target_policy": "predicted_class",
+    "shap_explainer": "TreeExplainer",
+    "shap_output": "native_tree_output",
+    "perturbation_baseline": "per_feature_training_median",
+    "notes": [
+      "SHAP and LIME explain the same saved model, sample, and predicted target class within each experiment.",
+      "Background and feature baselines are calculated from the reference training partition only.",
+      "The compactness measure is a structural proxy and is not a human-subject interpretability score.",
+      "Feature replacement stays inside the observed numeric range but can create an unobserved CAN combination."
+    ]
+  }
+}

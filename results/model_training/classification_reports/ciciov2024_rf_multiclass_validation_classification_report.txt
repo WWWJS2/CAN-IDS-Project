@@ -1,0 +1,12 @@
+                         precision    recall  f1-score   support
+
+                 BENIGN   1.000000  1.000000  1.000000    183877
+                    DOS   1.000000  1.000000  1.000000     11204
+           SPOOFING_GAS   1.000000  1.000000  1.000000      1509
+           SPOOFING_RPM   1.000000  1.000000  1.000000      8153
+         SPOOFING_SPEED   1.000000  1.000000  1.000000      3772
+SPOOFING_STEERING_WHEEL   1.000000  1.000000  1.000000      2958
+
+               accuracy                       1.000000    211473
+              macro avg   1.000000  1.000000  1.000000    211473
+           weighted avg   1.000000  1.000000  1.000000    211473
